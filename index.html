@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LemonMall — заработок на партнёрстве</title>
+  <meta name="description" content="Экосистема LemonMall: приглашай, развивай сеть и зарабатывай. Простой старт, поддержка, кейсы.">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="container">
+    <img src="/assets/lemon.svg" alt="LemonMall" class="logo">
+    <nav>
+      <a href="#how">Как это работает</a>
+      <a href="#faq">FAQ</a>
+      <a href="#join" class="btn">Начать</a>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <h1>Зарабатывай с LemonMall</h1>
+    <p>Подключайся к партнёрской экосистеме: приглашай людей и получай вознаграждения. Простой старт, поддержка и понятная система.</p>
+    <div class="cta">
+      <a id="waHero" target="_blank" rel="noopener" class="btn btn-whatsapp">Написать в WhatsApp</a>
+      <a href="#join" class="btn btn-secondary">Получить чек-лист</a>
+    </div>
+  </section>
+
+  <section id="how" class="container grid">
+    <div class="card"><h3>1. Привлекай</h3><p>Короткие ролики и посты ведут людей на эту страницу. Мы фиксируем UTM и реф-код.</p></div>
+    <div class="card"><h3>2. Захватывай</h3><p>Оставь контакт — мы отправим чек-лист и подсказки по старту.</p></div>
+    <div class="card"><h3>3. Прогревай</h3><p>Серия из 5 сообщений в мессенджере с кейсами и FAQ.</p></div>
+    <div class="card"><h3>4. Конвертируй</h3><p>Запишись на созвон и получи персональный план.</p></div>
+  </section>
+
+  <section id="join" class="container">
+    <h2>Получить стартовый чек-лист</h2>
+    <form id="leadForm" name="lead" method="POST" action="/.netlify/functions/lead" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="lead">
+      <p class="hidden"><label>Don’t fill: <input name="bot-field"></label></p>
+
+      <div class="field">
+        <label>Ваше имя*</label>
+        <input type="text" name="name" required placeholder="Амина">
+      </div>
+      <div class="field">
+        <label>WhatsApp номер*</label>
+        <input type="tel" name="whatsapp" required placeholder="+90 506 053 32 79">
+      </div>
+      <div class="field">
+        <label>Где удобнее общаться?</label>
+        <select name="preferred">
+          <option value="whatsapp">WhatsApp</option>
+          <option value="telegram">Telegram</option>
+          <option value="phone">Звонок</option>
+        </select>
+      </div>
+
+      <input type="hidden" name="utm_source" id="utm_source">
+      <input type="hidden" name="utm_medium" id="utm_medium">
+      <input type="hidden" name="utm_campaign" id="utm_campaign">
+      <input type="hidden" name="utm_content" id="utm_content">
+      <input type="hidden" name="ref" id="ref">
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+
+    <div class="mini">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</div>
+  </section>
+
+  <section id="faq" class="container">
+    <h2>Частые вопросы</h2>
+    <details><summary>Сколько можно заработать?</summary><p>Всё зависит от вашей активности и сети. На звонке разберём персональный план.</p></details>
+    <details><summary>Это сложно?</summary><p>Нет. Дадим готовые материалы, скрипты и контент-план.</p></details>
+    <details><summary>Как работает реферальная ссылка?</summary><p>Поделитесь ссылкой вида <code>?ref=ваше_имя</code>. Мы закрепим лидов за вами автоматически.</p></details>
+  </section>
+
+  <footer class="container footer">
+    <div>© LemonMall, 2025</div>
+    <div><a id="waFooter" class="btn btn-whatsapp" target="_blank" rel="noopener">Написать в WhatsApp</a></div>
+  </footer>
+
+  <script src="/assets/main.js"></script>
+</body>
+</html>
