@@ -1,0 +1,24 @@
+
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+background:#0b0c10;color:#E5F4F1;line-height:1.6}
+.container{max-width:960px;margin:0 auto;padding:24px}
+header{display:flex;align-items:center;justify-content:space-between}
+.logo{width:42px;height:42px}
+nav a{color:#E5F4F1;margin:0 10px;text-decoration:none;opacity:.9}
+nav a.btn{padding:10px 16px;border-radius:12px;background:#2dd4bf}
+.hero{padding:64px 24px 32px}
+h1{font-size:42px;line-height:1.1;margin:0 0 8px}
+.cta .btn{margin-right:12px}
+.btn{display:inline-block;background:#2dd4bf;color:#062925;padding:12px 18px;border-radius:14px;font-weight:700;text-decoration:none;border:none;cursor:pointer}
+.btn-secondary{background:transparent;border:1px solid #2dd4bf;color:#2dd4bf}
+.btn-whatsapp{background:#25D366;color:#062925}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#11151a;border:1px solid #1f2937;border-radius:16px;padding:16px}
+.field{margin-bottom:12px}
+.field input,.field select{width:100%;padding:12px;border-radius:12px;border:1px solid #1f2937;background:#0e1318;color:#E5F4F1}
+.hidden{display:none}
+.mini{opacity:.7;font-size:12px;margin-top:8px}
+.footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #1f2937;margin-top:32px;padding-top:16px}
+.thanks .video{margin:16px 0}
+details{background:#0e1318;border:1px solid #1f2937;border-radius:12px;padding:10px;margin:8px 0}
+details summary{cursor:pointer}
