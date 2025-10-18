@@ -63,7 +63,41 @@
         <img src="logo.png" alt="LemonMall логотип">
       </div>
     </header>
-    <main class="wrap">
+    <!-- ЛИД-ФОРМА -->
+<form action="/.netlify/functions/lead" method="POST" netlify-honeypot="bot-field" id="lead-form">
+  <!-- служебные (скрытые) -->
+  <input type="hidden" name="form-name" value="lead">
+  <p style="display:none"><label>Don’t fill: <input name="bot-field"></label></p>
+
+  <input type="hidden" name="utm_source"   id="utm_source">
+  <input type="hidden" name="utm_medium"   id="utm_medium">
+  <input type="hidden" name="utm_campaign" id="utm_campaign">
+  <input type="hidden" name="utm_content"  id="utm_content">
+  <input type="hidden" name="ref"          id="ref">
+
+  <!-- поля пользователя (минимум, без стилей чтобы не менять дизайн) -->
+  <div>
+    <label>Ваше имя<br>
+      <input name="name" required>
+    </label>
+  </div>
+  <div>
+    <label>WhatsApp<br>
+      <input name="whatsapp" placeholder="+90 ..." required>
+    </label>
+  </div>
+  <div>
+    <label>Предпочтительный канал<br>
+      <select name="preferred">
+        <option value="whatsapp">WhatsApp</option>
+        <option value="telegram">Telegram</option>
+      </select>
+    </label>
+  </div>
+  <button type="submit">Отправить</button>
+</form>
+<!-- /ЛИД-ФОРМА -->
+<main class="wrap">
       
 <div style="display:flex;justify-content:center;align-items:center;margin:40px 0;">
   <video controls style="max-width:90%;border-radius:12px;box-shadow:0 0 12px rgba(0,0,0,.4);">
