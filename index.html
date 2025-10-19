@@ -228,16 +228,21 @@
     <input type="hidden" name="utm_content" id="utm_content" />
     <input type="hidden" name="ref" id="ref" />
 
-    <div class="form-grid">
-      <div class="field">
-        <label>Ваше имя</label>
-        <input name="name" placeholder="Например: Камилла" required />
-      </div>
-      <div class="field">
-        <label>WhatsApp</label>
-        <input name="whatsapp" placeholder="+90 5xx xxx xx xx" required />
-      </div>
-      <div class="field">
+    <div class="field">
+  <label>Имя Фамилия</label>
+  <input name="name" autocomplete="name" required />
+</div>
+
+<div class="field">
+  <label>WhatsApp</label>
+  <input
+    name="whatsapp"
+    placeholder="+5xx xxx xx xx"
+    inputmode="tel"
+    pattern="^\+\d[\d\s\-()]{6,}$"
+    required
+  />
+</div>
         <label>Предпочтительный канал</label>
         <select name="preferred">
           <option value="whatsapp">WhatsApp</option>
