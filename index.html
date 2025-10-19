@@ -155,14 +155,24 @@
 
     <!-- ГЕРО-БЛОК: СНАЧАЛА ТЕКСТ, ПОТОМ ВИДЕО -->
     <section class="hero">
-      <h1>LemonMall — маркетплейс новых возможностей</h1>
-      <p class="lead">Экосистема для заработка: развивайся с брендом будущего, приглашай пользователей и получай доход.</p>
-      <ul class="points">
-        <li>Премиум-подход: качество, сервис, доверие</li>
-        <li>Доход за приглашения и развитие сети</li>
-        <li>Международные амбиции — присоединяйся к проекту</li>
-      </ul>
-      <a class="cta" href="https://wa.me/905606533279?text=Хочу%20в%20LemonMall" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      <h1>Хочешь зарабатывать онлайн и быть частью международного проекта?</h1>
+
+<p class="lead">
+  Lemon Mall — это современный маркетплейс, который объединяет продавцов и покупателей по всему миру.
+  Мы открываем набор агентов по продвижению в Турции! 🇹🇷
+</p>
+
+<ul class="points">
+  <li>🍋 Бесплатное обучение и поддержка наставников</li>
+  <li>💸 Возможность зарабатывать без вложений</li>
+</ul>
+
+      <a class="cta"
+   href="https://wa.me/905060533279?text=%D0%A5%D0%BE%D1%87%D1%83%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%20%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D0%BE%D0%BC"
+   target="_blank" rel="noopener">
+  Написать в WhatsApp
+</a>
+
 
       <!-- ВИДЕО #1 -->
       <div class="video-wrap">
@@ -173,51 +183,8 @@
       </div>
     </section>
 
-    <!-- ФОРМА ЛИДОВ (карточка) -->
-    <section class="form-card" id="lead-card">
-      <h2 class="form-title">Заявка на подключение</h2>
-      <form id="lead-form" action="/.netlify/functions/lead" method="POST" netlify-honeypot="bot-field">
-        <!-- служебные -->
-        <input type="hidden" name="form-name" value="lead" />
-        <p style="display:none;"><label>Don’t fill: <input name="bot-field" /></label></p>
+   
 
-        <input type="hidden" name="utm_source" id="utm_source" />
-        <input type="hidden" name="utm_medium" id="utm_medium" />
-        <input type="hidden" name="utm_campaign" id="utm_campaign" />
-        <input type="hidden" name="utm_content" id="utm_content" />
-        <input type="hidden" name="ref" id="ref" />
-
-        <div class="form-grid">
-          <div class="field">
-            <label>Ваше имя</label>
-            <input name="name" placeholder="Например: Камилла" required />
-          </div>
-
-          <div class="field">
-            <label>WhatsApp</label>
-            <input name="whatsapp" placeholder="+90 ..." required />
-          </div>
-
-          <div class="field">
-            <label>Предпочтительный канал</label>
-            <select name="preferred">
-              <option value="whatsapp">WhatsApp</option>
-              <option value="telegram">Telegram</option>
-            </select>
-          </div>
-
-          <div class="field">
-            <label>Комментарий (необязательно)</label>
-            <input name="comment" placeholder="Пару слов о цели" />
-          </div>
-        </div>
-
-        <div class="row">
-          <button class="btn" type="submit">Отправить</button>
-          <div class="muted-note">Ответ придёт в Telegram бота. Заполни контакты корректно.</div>
-        </div>
-      </form>
-    </section>
 
     <!-- ВИДЕО #2 -->
     <div class="video-wrap">
@@ -247,7 +214,53 @@
     <source src="videos/lemonmall-latest.mp4" type="video/mp4" />
   </video>
 </div>
+ <!-- ФОРМА ЛИДОВ (карточка) -->
+    <!-- ФОРМА ЛИДОВ (перенесена вниз, перед футером) -->
+<section class="form-card" id="lead-card">
+  <h2 class="form-title">Заявка на подключение</h2>
+  <form id="lead-form" action="/.netlify/functions/lead" method="POST" netlify-honeypot="bot-field">
+    <!-- служебные -->
+    <input type="hidden" name="form-name" value="lead" />
+    <p style="display:none;"><label>Don’t fill: <input name="bot-field" /></label></p>
 
+    <input type="hidden" name="utm_source" id="utm_source" />
+    <input type="hidden" name="utm_medium" id="utm_medium" />
+    <input type="hidden" name="utm_campaign" id="utm_campaign" />
+    <input type="hidden" name="utm_content" id="utm_content" />
+    <input type="hidden" name="ref" id="ref" />
+
+    <div class="form-grid">
+      <div class="field">
+        <label>Ваше имя</label>
+        <input name="name" placeholder="Например: Камилла" required />
+      </div>
+      <div class="field">
+        <label>WhatsApp</label>
+        <input name="whatsapp" placeholder="+90 5xx xxx xx xx" required />
+      </div>
+      <div class="field">
+        <label>Предпочтительный канал</label>
+        <select name="preferred">
+          <option value="whatsapp">WhatsApp</option>
+          <option value="telegram">Telegram</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Комментарий (необязательно)</label>
+        <input name="comment" placeholder="Пару слов о цели" />
+      </div>
+    </div>
+
+    <div class="row">
+      <button class="btn" type="submit">Отправить</button>
+      <a class="btn" href="https://wa.me/905060533279?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%B2%20LemonMall" target="_blank" rel="noopener">
+        Написать в WhatsApp
+      </a>
+      <div class="muted-note">Ответ придёт в Telegram-бота. Указывайте верный WhatsApp.</div>
+    </div>
+  </form>
+</section>
+<!-- /ФОРМА ЛИДОВ -->
     <footer>
       <div>LemonMall © 2025. Все права защищены.</div>
     </footer>
