@@ -138,6 +138,19 @@
     }
 
     footer { margin-top: 40px; color: var(--muted); font-size: 13px; text-align:center; }
+
+    /* поднять кнопку отправки ближе к форме — без изменения остального дизайна */
+#lead-card { 
+  margin-bottom: 6px !important;   /* было больше — уменьшаем просвет снизу карточки */
+}
+#lead-card .row { 
+  margin-top: 4px !important;      /* уменьшаем отступ над кнопкой */
+  justify-content: center !important;
+}
+#lead-card .btn { 
+  margin-top: 0 !important;        /* на всякий случай убираем собственный верхний отступ */
+}
+
   </style>
 </head>
 
@@ -264,10 +277,10 @@
   </div>
 </div>
 
-<div class="row" style="justify-content:center">
+<div class="row" style="justify-content:center; margin-top:28px">
   <button class="btn" type="submit">Отправить</button>
 </div>
-<div class="muted-note" style="text-align:center; margin-top:8px">
+<div class="muted-note" style="text-align:center; margin-top:16px">
   Ответ придёт в Telegram-бота. Указывайте верный WhatsApp.
 </div>
 
